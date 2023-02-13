@@ -1,0 +1,299 @@
+.sc-visual {
+  position: relative;
+}
+.sc-visual .main-slide {
+  /* height: 100%;
+  display: block;
+  overflow: hidden; */
+}
+.sc-visual .main-slide .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  transform: rotate(45deg) translate(-15%,15%);
+ 
+}
+.sc-visual .main-slide .btn::before {
+  
+}
+.sc-visual .main-slide .btn.prev {
+  left: 30px;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+.sc-visual .main-slide .btn.next {
+  right: 70px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+.sc-visual .state-area {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+.sc-visual .state-area .guage {
+  width: 80px;
+  height: 3px;
+  background: #fff;
+}
+.sc-visual .state-area .guage .curr {
+  width: 50%;
+  height: 100%;
+  display: block;
+}
+
+
+.sc-best {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+.sc-best::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  top: 60px;left: 0;
+  content: '';
+}
+.sc-best::after {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  top: 0px;left: 30%;
+  content: '';
+}
+.sc-best .group-menu {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 35px 45px;
+}
+.sc-best .group-menu .headline {
+  font-size: 40px;
+  font-weight: bold;
+}
+.sc-best .group-menu .headline::after {
+  width: 25px;
+  height: 30px;
+  display: inline-block;
+  background: url(https://images.descentekorea.co.kr/contents/static_pc/Descente/assets/images/out_arrow.svg) no-repeat center/100%;
+  content: '';
+}
+.sc-best .group-menu .nav-list {}
+.sc-best .group-menu .nav-item {
+  color: #ccc;
+}
+.sc-best .group-menu .nav-item a {
+  font-size: 32px;
+  display: block;
+  line-height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+.sc-best .group-menu .nav-item.active {
+  color: #000;
+}
+
+
+.sc-best .group-prd {
+  flex: 1;
+  padding: 100px 35px 45px;
+}
+
+.sc-best .group-prd .prd-area {
+  overflow: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  height: 100%;
+}
+.sc-best .group-prd .prd-area::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.sc-best .group-prd .prd-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 35px;
+
+}
+.sc-best .group-prd .prd-item {
+}
+.sc-best .group-prd .prd-item .link-wrap {
+  display: block;
+}
+.sc-best .group-prd .thumb-box {}
+.sc-best .group-prd .thumb-box img {
+  width: 100%;
+}
+.sc-best .group-prd .info-box {
+  padding: 10px 0 90px;
+}
+.sc-best .group-prd .info-box .name {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.sc-best .group-prd .info-box .price {
+  
+}
+
+
+.sc-theme1{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.sc-theme1 .group-prd{
+  width: 46%;
+  padding: 45px 35px 0;
+  display: flex;
+  flex-direction: column;
+}
+.sc-theme1 .group-prd .headline {
+  font-size: 40px;
+  font-weight: bold;
+}
+.sc-theme1 .group-prd .headline::after {
+  width: 25px;
+  height: 30px;
+  display: inline-block;
+  background: url(https://images.descentekorea.co.kr/contents/static_pc/Descente/assets/images/out_arrow.svg) no-repeat center/100%;
+  content: '';
+}
+.sc-theme1 .group-prd .slide-area{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.sc-theme1 .group-prd .prd-slide1{
+  width: 100%;
+  height: 70%;
+}
+.sc-theme1 .group-front{
+  flex: 1;
+}
+.sc-theme1 .group-front a{
+  display: block;
+}
+.sc-theme1 .group-front img{
+  width: 100%;
+}
+
+
+.sc-theme2 {
+  margin: 0 35px;
+}
+.sc-theme2 .headline {
+  padding: 90px 0 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: center;
+}
+.sc-theme2 .prd-slide2{}
+.sc-theme2 .prd-slide2 .thumb-box{}
+.sc-theme2 .prd-slide2 .thumb-box img{
+  width: 100%;
+}
+
+.sc-theme2 .prd-slide2 .info-box {
+  padding: 10px 0 100px;
+}
+.sc-theme2 .prd-slide2 .info-box .name {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.wd-banner {
+  margin: 0 35px;
+}
+
+
+.sc-theme3 {
+  margin: 0 35px;
+}
+.sc-theme3 .headline {
+  padding: 90px 0 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.sc-theme3 .prd-slide3 .info-box {
+  padding: 10px 0 100px;
+}
+.sc-theme3 .prd-slide3 .info-box .name {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.sc-experience{
+  overflow: hidden;
+}
+.sc-experience .rolling-area{
+  display: flex;
+}
+.sc-experience .rolling-area li{
+  display: flex;
+  align-items: center;
+}
+.sc-experience .rolling-area.roll1 li{
+}
+.sc-experience .rolling-area li:last-child{
+}
+.sc-experience .rolling-area img{}
+.sc-experience .rolling-area p{
+  font-size: 9.3023vw;
+  font-weight: bold;
+}
+
+
+.footer .group-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  padding: 0 10px;
+}
+.footer .group-member .border {
+  border-bottom: 2px solid #000;
+}
+
+.footer .group-member .member {
+}
+.footer .group-member .support {
+}
+
+.footer .group-member .member::after {
+  width: 25px;
+  height: 30px;
+  margin: 0 15px;
+  display: inline-block;
+  background: url(https://images.descentekorea.co.kr/contents/static_pc/Descente/assets/images/out_arrow.svg) no-repeat center/100%;
+  content: '';
+}
+.footer .group-member .support::after {
+  width: 25px;
+  height: 30px;
+  margin: 0 15px;
+  display: inline-block;
+  background: url(https://images.descentekorea.co.kr/contents/static_pc/Descente/assets/images/out_arrow.svg) no-repeat center/100%;
+  content: '';
+}
+
